@@ -14,4 +14,8 @@ class TasksLoader:
         self._source = source
 
     def load(self) -> Iterable[Task]:
+        """
+        Get tasks from source.
+        :return:   Iterable of models.Task
+        """
         return self._source.get_tasks()
