@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
+from unittest.mock import patch, mock_open
 
 import pytest
-from unittest.mock import patch, mock_open, MagicMock
 
 
 @pytest.fixture
