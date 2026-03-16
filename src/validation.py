@@ -13,6 +13,6 @@ class SourceValidator:
     def validate(self, source: Any) -> None:
         if not self.is_valid(source):
             raise TypeError(
-                f"'{type(source).__name__}' is missing \
-                following '{self._protocol.__name__}' protocol member."
+                f"'{type(source).__name__}' is missing "
+                f"following '{self._protocol.__name__}' protocol member."
             )
