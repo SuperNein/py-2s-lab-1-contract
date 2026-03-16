@@ -32,6 +32,14 @@ def sample_data():
     ]
 
 @pytest.fixture
+def sample_data_without_id():
+    return [
+        {"payload": {"data": "task_1"}},
+        {"id": 2, "payload": {}},
+        {"id": 3},
+    ]
+
+@pytest.fixture
 def file_task_source(
         mock_file_exists,
         mock_json_file,
